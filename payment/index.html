@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>payment</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100&#38;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="../style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<a href="" class="logo"><img src="../img/logo.png" alt=""></a>
+			<a href="" class="mobile-menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			<ul class="menu">
+				<li class="active"><a href="">Курсы</a></li>
+				<li><a href="">О компании</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+			<div class="loggin">
+				<div class="header-user">
+					<div class="user-wrapp">
+	  					<span>Иван</span>
+	  					<img src="../img/avatar.png" alt="">
+	  				</div>
+	  				<div class="user-menu">
+	  					<ul>
+	  						<li><a href="">
+	  								<div>
+	  									<i class="fa fa-user" aria-hidden="true"></i><span>Профиль</span>
+	  								</div>
+	  							</a></li>
+	  						<li><a href="">
+	  								<div>
+	  									<i class="fa fa-cog" aria-hidden="true"></i><span>Настройки</span>
+	  								</div>
+	  							</a></li>
+	  						<li><a href="">
+	  								<div>
+	  									<i class="fa fa-question" aria-hidden="true"></i><span>Помощь</span>
+	  								</div>
+	  							</a></li>
+	  						<li><a href="">
+	  								<div>
+	  									<img src="../img/logout.png" alt=""><span>Выход</span>
+	  								</div>
+	  							</a></li>
+	  					</ul>
+	  				</div>
+  				</div>
+				<button class="to-sign hidden">Войти</button>
+				<button class="to-reg hidden">Зарегистрироваться</button>
+			</div>
+			<div class="enter-form reg">
+				<div class="form-wrapp">
+					<div class="enter-title">Добро пожаловать!</div>
+					<div class="enter-info">Для просмотра курсов, пожалуйста, зарегистрируйтесь</div>
+					<form>
+						<input type="text" placeholder="Имя" name="name">
+						<input type="text" placeholder="Email" name="email">
+						<input type="password" placeholder="Пароль" name="password">
+						<div class="form-sub">
+							<input type="submit" value="Зарегистрироваться">
+							<a href=""><div class="soc-icon soc-vk"><i class="fa fa-vk" aria-hidden="true"></i></div></a>
+							<a href=""><div class="soc-icon soc-fb"><i class="fa fa-facebook" aria-hidden="true"></i></div></a>
+						</div>
+					</form>
+				</div>
+				<div class="sugg">
+					<span>Есть учётна запись?</span>
+					<span class="sugg-link to-sign">Войдите!</span>
+				</div>
+			</div>
+			<div class="enter-form signin">
+				<div class="form-wrapp">
+					<div class="enter-title">Добро пожаловать!</div>
+					<div class="enter-info">Для просмотра курсов, пожалуйста, авторизуйтесь</div>
+					<form>
+						<input type="text" placeholder="Email" name="email">
+						<input type="password" placeholder="Пароль" name="password">
+						<div class="form-sub">
+							<input type="submit" value="Войти">
+							<span class="forgot-pass">Забыли пароль?</span>
+							<a href=""><div class="soc-icon soc-vk"><i class="fa fa-vk" aria-hidden="true"></i></div></a>
+							<a href=""><div class="soc-icon soc-fb"><i class="fa fa-facebook" aria-hidden="true"></i></div></a>
+						</div>
+					</form>
+				</div>
+				<div class="sugg">
+					<span>Нет учётной записи?</span>
+					<span class="sugg-link to-reg">Зарегистрируйтесь!</span>
+				</div>
+			</div>
+			<div class="enter-form forgot">
+				<div class="form-wrapp">
+					<div class="enter-title">ВОсстановление пароля!</div>
+					<div class="enter-info">Введите <b>email</b> и мы вышлем ссылку на востановление пароля</div>
+					<form>
+						<input type="text" placeholder="Email" name="email">
+						<div class="form-sub">
+							<input type="submit" value="Выслать пароль">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="overlay"></div>
+		</div>
+		<div class="payment-wrapp">
+			<div class="payment-img"><img src="../img/wordmaster1.png" alt=""></div>
+			<div class="payment-title">Мастерский курс</div>
+			<div class="pay">
+				<span>К оплате</span>
+				<div class="pay-sum">
+					<div class="change-currency">Сменить валюту</div>
+					<span class="price">1200 руб.</span>
+				</div>
+				<button class="change-pay">Выбрать способ оплаты</button>
+			</div>
+			<div class="if-notpay">
+				<p>Если автоматическая оплата не прошла (например, не пришла sms с кодом подтверждения), Вы можете:</p><br>
+				<p>1. Перебросить деньги на наш веб-мани или яндекс деньги, и мы откроем доступ вручную.</p>
+				<p><span class="bold">Веб-мани:</span> WMID: 374645329781, рублёвый кошелёк R250540705183.</p>
+				<p>Если удобнее в долларах: Z188848940420</p>
+				<p>2. Перевести на карточку (ПриватБанк, MasterCard), и аналогично - откроем вручную.</p>
+				<p>5168 7553 9352 6344 (Kateryna Nechyporenko)</p><br>
+				<p>В этом случае после оплаты напишите на info@skill.im</p>
+			</div>
+			<ul class="quest">
+				<li>
+					<div class="img">?</div>
+					<div class="quest-title">На сколько времени я получу доступ к курсу?</div>
+					<div class="div-uns">Доступ к курсу никак не ограничен по времени. </div>
+				</li>
+				<li>
+					<div class="img">?</div>
+					<div class="quest-title">Как быстро я получу дотсуп к курсу?</div>
+					<div class="div-uns">Если Вы оплачиваете курс через интернет (с карточки, яндекс-денег и т.д.), то после оплаты Вы получите доступ к курсу немедленно</div>
+				</li>
+				<li>
+					<div class="img">?</div>
+					<div class="quest-title">Я хочу оплатить через терминал или банковским переводом</div>
+					<div class="div-uns">В этом случае нам понадобится немного времени на обработку платежа. Вы получите доступ в течении нескольких часов</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-logo">
+			<a href=""><img src="../img/logo-footer.png" alt=""></a>
+			<p>© 2014 Skill.im Все права защищены.</p>
+		</div>
+		<ul class="footer-cont">
+			<li><a href="skype:kakoy_to_skype"><i class="fa fa-skype" aria-hidden="true"></i><span>kakoy_to_skype</span></a></li>
+			<li><a href="mailto:info@skill.im"><img src="../img/mail-icon.png" alt=""><span>info@skill.im</span></a></li>
+			<li><a href="tel:+380930055111"><div class="div-icon"><i class="fa fa-phone" aria-hidden="true"></i></div><span>(093) 005 51 11</span></a></li>
+			<li><a href=""><img src="../img/youtube-icon.png" alt=""></a></li>
+		</ul>
+		<i class="fa fa-chevron-up" aria-hidden="true"></i>
+	</div>
+</body>
+</html>

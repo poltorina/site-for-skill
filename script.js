@@ -1,0 +1,190 @@
+$(document).ready(function() {
+	$('.header .header-user .user-wrapp').click(function() {
+		$('.user-menu ').toggleClass('user-menu-active');
+	});
+
+	$('.an-close').click(function() {
+		$('.anons').css('display', 'none');
+	});
+
+
+  	$('.header .loggin button').click(function() {
+		$('#overlay').fadeIn(400);
+	})
+
+	$('#overlay').click( function(){
+		$('.enter-form').animate({opacity: 0, top: '0%'}, 200, function(){
+	    	$(this).css('display', 'none'); 
+	    	$('#overlay').fadeOut(400);
+		});
+	});
+
+
+	$('.to-sign').click(function() {
+		$('.enter-form').animate({opacity: 0, top: '0%'}, 200, function(){
+	    	$('.signin').css('display', 'block').animate({opacity: 1, top: '13%'}, 200);
+		});
+	});
+
+	$('.to-reg').click(function() {
+		$('.enter-form').animate({opacity: 0, top: '0%'}, 200, function(){
+	    	$('.reg').css('display', 'block').animate({opacity: 1, top: '13%'}, 200);
+		});
+	})
+
+	$('.forgot-pass').click(function() {
+		$('.enter-form').animate({opacity: 0, top: '0%'}, 200, function(){
+	    	$('.forgot').css('display', 'block').animate({opacity: 1, top: '13%'}, 200);
+		});
+	})
+
+	$('.footer .fa-chevron-up').click(function(event) {
+		event.preventDefault();
+	  	$('body,html').animate({
+	    	scrollTop: $('.wrapper').offset().top}, 1000);
+	});
+
+	//mobile menu-button
+	$('.mobile-menu-btn').click(function(e){
+		$(this).toggleClass('active');
+		$('.header .menu').toggleClass('active-mobile');
+		$('.header .loggin').toggleClass('loggin-mobile');
+		e.preventDefault();
+		return false;
+	});
+
+	$('.ms-block .c-title').each(function(i,elem) {
+		if ($(this).find('.c-name').height() > 25) {
+			$(this).find('.c-time').css('display', 'inline-block');
+		}
+
+	});
+
+	$('.course-bottom .tabs li').click(function() {
+		$('.course-bottom .tabs li').removeClass('active');
+		$(this).addClass('active');
+		$('.info-panel').addClass('hidden');
+		let firstClass = $(this).attr('class').split(' ')[0];
+		$('#' + firstClass).removeClass('hidden');
+
+
+		$('.course-bottom .tabs li img').each(function(index, el) {
+		var notHover = $(this).attr('src');
+		notHover = notHover.slice(0, -8);
+		activeImg = notHover + '-hov.png';
+		notActiveImg = notHover + '-not.png';
+			$(this).attr('src', notActiveImg);
+		});
+
+		var notHover = $(this).find('img').attr('src');
+		notHover = notHover.slice(0, -8);
+		activeImg = notHover + '-hov.png';
+		$(this).find('img').attr('src', activeImg);
+	})
+
+	$('.courses-menu-btn').click(function() {
+		$(this).toggleClass('courses-menu-btn-active');
+		$('.courses-menu').toggleClass('menu-active');
+	})
+
+	$('.course-bottom .reply').click(function(event) {
+		event.preventDefault();
+		$(this).closest('.comment ').find('.reply-form').removeClass('hidden');
+	});
+
+	$('.const-wrapp .add').click(function() {
+		$(this).addClass('added');
+	});
+
+	$('.const-wrapp .expand').click(function() {
+		$(this).find('i').toggleClass('fa-chevron-down');
+		$(this).find('i').toggleClass('fa-chevron-up');
+	});
+
+	$('.const-wrapp .expand-course').click(function() {
+		$(this).closest('li').toggleClass('active-course');
+		$(this).closest('li').find('.part-list').toggleClass('part-list-active');
+	})
+
+	$('.const-wrapp .expand-part').click(function() {
+		$(this).closest('li').toggleClass('active-part');
+		$(this).closest('li').find('.less-list').toggleClass('less-list-active');
+	})
+
+
+	$(document).on('click', function(e) {
+	  if (!$(e.target).closest(".reply").length && !$(e.target).closest(".reply-form").length) {
+	    $('.reply-form').addClass('hidden');
+	  }
+	  e.stopPropagation();
+	});
+
+	// function setEqualHeight(columns) {
+	// 	var tallestcolumn = 0;
+	// 	columns.each(function() {
+	// 		currentHeight = $(this).height();
+	// 		console.log($(".left-col, .right-col"))
+	// 		if(currentHeight > tallestcolumn) {
+	// 			tallestcolumn = currentHeight;
+	// 		}
+	// 	});
+	// 	columns.height(tallestcolumn);
+	// 	}
+	// 	setEqualHeight($(".left-col, .right-col"));
+	// 	$('.expand').click(function() {
+	// 		setEqualHeight($(".right-col,.left-col"));
+	// 	});
+});
+
+window.onload = resizeDiv;
+window.addEventListener('resize', function(){
+	return resizeDiv();
+}, true);
+
+function resizeDiv(){
+	$('.rel-title').each(function(i,elem) {
+		if ($(this).height() < 35) {
+			$(this).find('.rel-name').css('display', 'block');
+			if ($(this).height() > 70) {
+				$(this).find('.rel-name').css('display', 'inline');
+			}
+		}
+		if ($(this).height() > 70) {
+			$(this).find('.rel-name').css('display', 'inline');
+		}
+	});
+
+	$('.course-bottom .tab-list li').each(function(i, el) {
+		if($(this).height() > 60) {
+    		$(this).addClass('psevdo-middle')
+		}
+	});
+
+	$('.part-name').each(function(i,elem) {
+		if ($(this).height() < 35) {
+			$(this).css('display', 'block');
+			if ($(this).height() > 35) {
+				$(this).css('display', 'inline');
+			}
+		}
+		if ($(this).height() > 35) {
+			$(this).css('display', 'inline');
+		}
+	});
+
+	
+	var footerHeight = $('.footer').outerHeight();
+	$('.wrapper').css('min-height', 'calc(100vh - ' + footerHeight + 'px)');
+	if ($('.container').height() < 240) {
+		$('.container').css('top', $('.wrapper').height() / 2 - 120 + 'px');
+	} else {
+		$('.container').css('top', '0');		
+	}
+
+	// $('.expand').click(function() {
+
+	// 	setEqualHeight($(".left-col, .right-col"));
+
+	// });
+}
+

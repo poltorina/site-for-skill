@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>card/buy</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,600,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="../../style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../../script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<a href="" class="logo"><img src="../../img/logo.png" alt=""></a>
+			<a href="" class="mobile-menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			<ul class="menu">
+				<li class="active"><a href="">Курсы</a></li>
+				<li><a href="">О компании</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+			<div class="loggin">
+				<div class="header-user">
+					<div class="user-wrapp">
+	  					<span>Иван</span>
+	  					<img src="../../img/avatar.png" alt="">
+	  				</div>
+	  				<div class="user-menu">
+	  					<ul>
+	  						<li><a href="">
+	  								<div>
+	  									<i class="fa fa-user" aria-hidden="true"></i><span>Профиль</span>
+	  								</div>
+	  							</a></li>
+	  						<li><a href="">
+	  								<div>
+	  									<i class="fa fa-cog" aria-hidden="true"></i><span>Настройки</span>
+	  								</div>
+	  							</a></li>
+	  						<li><a href="">
+	  								<div>
+	  									<i class="fa fa-question" aria-hidden="true"></i><span>Помощь</span>
+	  								</div>
+	  							</a></li>
+	  						<li><a href="">
+	  								<div>
+	  									<img src="../../img/logout.png" alt=""><span>Выход</span>
+	  								</div>
+	  							</a></li>
+	  					</ul>
+	  				</div>
+  				</div>
+				<button class="to-sign hidden">Войти</button>
+				<button class="to-reg hidden">Зарегистрироваться</button>
+			</div>
+			<div class="enter-form reg">
+				<div class="form-wrapp">
+					<div class="enter-title">Добро пожаловать!</div>
+					<div class="enter-info">Для просмотра курсов, пожалуйста, зарегистрируйтесь</div>
+					<form>
+						<input type="text" placeholder="Имя" name="name">
+						<input type="text" placeholder="Email" name="email">
+						<input type="password" placeholder="Пароль" name="password">
+						<div class="form-sub">
+							<input type="submit" value="Зарегистрироваться">
+							<a href=""><div class="soc-icon soc-vk"><i class="fa fa-vk" aria-hidden="true"></i></div></a>
+							<a href=""><div class="soc-icon soc-fb"><i class="fa fa-facebook" aria-hidden="true"></i></div></a>
+						</div>
+					</form>
+				</div>
+				<div class="sugg">
+					<span>Есть учётна запись?</span>
+					<span class="sugg-link to-sign">Войдите!</span>
+				</div>
+			</div>
+			<div class="enter-form signin">
+				<div class="form-wrapp">
+					<div class="enter-title">Добро пожаловать!</div>
+					<div class="enter-info">Для просмотра курсов, пожалуйста, авторизуйтесь</div>
+					<form>
+						<input type="text" placeholder="Email" name="email">
+						<input type="password" placeholder="Пароль" name="password">
+						<div class="form-sub">
+							<input type="submit" value="Войти">
+							<span class="forgot-pass">Забыли пароль?</span>
+							<a href=""><div class="soc-icon soc-vk"><i class="fa fa-vk" aria-hidden="true"></i></div></a>
+							<a href=""><div class="soc-icon soc-fb"><i class="fa fa-facebook" aria-hidden="true"></i></div></a>
+						</div>
+					</form>
+				</div>
+				<div class="sugg">
+					<span>Нет учётной записи?</span>
+					<span class="sugg-link to-reg">Зарегистрируйтесь!</span>
+				</div>
+			</div>
+			<div class="enter-form forgot">
+				<div class="form-wrapp">
+					<div class="enter-title">ВОсстановление пароля!</div>
+					<div class="enter-info">Введите <b>email</b> и мы вышлем ссылку на востановление пароля</div>
+					<form>
+						<input type="text" placeholder="Email" name="email">
+						<div class="form-sub">
+							<input type="submit" value="Выслать пароль">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="overlay"></div>
+		</div>
+		<div class="course-top">
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="">MS Excel</a><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
+					<li>Продвинутый курс</li>
+				</ul>
+			</div>
+			<div class="course-cover"><iframe width="700" height="394" src="https://www.youtube.com/embed/kNGHvuSNNpY?rel=0" frameborder="0" allowfullscreen></iframe></div>
+			<div class="course-info">
+				<h3 class="info-title">Продвинутый курс</h3>
+				<div class="button">
+					<div class="info-bought hidden"><span>приобретен<i class="fa fa-check" aria-hidden="true"></i></span><button>Продолжить просмотр</button></div>
+					<div class="info-bought hidden"><span>приобретен<i class="fa fa-check" aria-hidden="true"></i></span><button>Начать курс</button></div>
+					<div class="info-free info-prise hidden"><span>0 руб.</span><button>Пройти курс БЕСПЛАТНО</button></div>
+					<div class="info-buy info-prise"><span>1 200 руб.</span><button>Купить курс</button></div>
+				</div>
+				<div class="info-text">Повседневная практика показывает, что сложившаяся структура организации позволяет выполнять важные задания по разработке модели развития. Повседневная практика показывает, что реализация намеченных плановых заданий требуют определения и уточнения существенных финансовых и административных условий</div>
+				<div class="bottom-info">
+					<button class="ask"><i class="fa fa-question" aria-hidden="true"></i> Задать вопрос</button>
+					<button class="addSrc hidden"><i class="fa fa-plus" aria-hidden="true"></i>Добавить в избранные</button>
+					<button class="addedSrc"><i class="fa fa-check" aria-hidden="true"></i>Добавлено в избранные</button>
+					<div class="info-stat">
+						<div class="stat-rate"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></div>
+						<div class="stat-num"><i class="fa fa-user" aria-hidden="true"></i>356</div>
+						<div class="stat-time"><i class="fa fa-clock-o" aria-hidden="true"></i><span class="hours">4ч </span><span class="minute">7м</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="course-bottom">
+			<div class="corse-content">
+				<ul class="tabs">
+					<li class="tab-soder active">
+						<img src="../../img/sodr-hov.png" alt=""><span>Содержание</span>
+					</li>
+					<li class="tab-opis">
+						<img src="../../img/opis-not.png" alt=""><span>Описание</span>
+					</li>
+					<li class="tab-comm">
+						<img src="../../img/comm-not.png" alt=""><span>Комментарии</span>
+					</li>
+					<li class="tab-file">
+						<img src="../../img/file-not.png" alt=""><span>Файлы</span>
+					</li>
+				</ul>
+				<div class="tabs-panel">
+					<div id="tab-soder" class="info-panel tab-soder">
+						<div class="progress hidden">
+						    <progress max="100" value="0"></progress>
+						    <div class="progress-value">Пройдено 12%</div>
+						    <div class="progress-bg"><div class="progress-bar"></div></div>
+						</div>
+						<ul class="tab-list">
+							<li class="main passed">
+								<a href=""><span class="bold">Раздел №1. </span><span>Вступление</span></a><i></i>
+								<div class="tabs-buy">
+									<div><span class="text">Купить раздел</span><span class="price">1000 рублей</span></div>
+								</div>
+							</li>
+							<li class="list-child passed">
+								<a href=""><span>1. Вступление</span></a><i></i>
+								<div class="tab-list-time">
+									<span><i class="fa fa-clock-o" aria-hidden="true"></i>2:17</span>
+								</div>
+							</li>
+							<li class="list-child inprogress">
+								<a href=""><span>2. Как устроен этот курс</span></a><i></i>
+								<div class="tab-list-time">
+									<span><i class="fa fa-clock-o" aria-hidden="true"></i>2:17</span>
+								</div>
+							</li>
+							<li class="main">
+								<a href=""><span class="bold">Раздел №2. </span><span>Продвинутое форматирование</span></a><i></i>
+								<div class="tabs-buy">
+									<div><span class="text">Купить раздел</span><span class="price">1000 рублей</span></div>
+								</div>
+							</li>
+							<li class="list-child">
+								<a href=""><span>3. Использование тем</span></a><i></i>
+								<div class="tab-list-time">
+									<span><i class="fa fa-clock-o" aria-hidden="true"></i>2:17</span>
+								</div>
+							</li>
+							<li class="list-child">
+								<a href=""><span>4. Добавление примечаний</span></a><i></i>
+								<div class="tab-list-time">
+									<span><i class="fa fa-clock-o" aria-hidden="true"></i>2:17</span>
+								</div>
+							</li>
+							<li class="list-child">
+								<a href=""><span>5. Создание списков быстрого заполнения</span></a><i></i>
+								<div class="tab-list-time">
+									<span><i class="fa fa-clock-o" aria-hidden="true"></i>2:17</span>
+								</div>
+							</li>
+							<li class="list-child">
+								<a href=""><span>6. Форматирование в виде таблицы</span></a><i></i>
+								<div class="tab-list-time">
+									<span><i class="fa fa-clock-o" aria-hidden="true"></i>2:17</span>
+								</div>
+							</li>						
+						</ul>
+					</div>
+					<div id="tab-opis" class="info-panel tab-opis hidden">
+						<p class="bold">Девиз курса:</p>
+						<p>Я могу всё!</p><br>
+						<p class="bold">Главная цель курса:</p>
+						<p>Превратить Excel в простой и понятный рабочий инструмент, с помощью которого Вы сможете экономить время и решать множество реальных задач.</p>
+						<p class="bold">В этом курсе Вы узнаете:</p>
+						<ul>
+							<li class="tab-opis-vid"><span>Как защищать данные в таблицах.</span></li>
+							<li class="tab-opis-vid"><span>Как работать с картинками и прочими графическими объектами.</span></li>
+							<li class="tab-opis-vid"><span>Как вставлять результаты вычислений в графические объекты.</span></li>
+							<li class="tab-opis-vid"><span>Как создавать и настраивать диаграммы.</span></li>
+							<li class="tab-opis-vid"><span>Как сортировать и фильтровать данные.</span></li>
+							<li class="tab-opis-vid"><span>Как добавлять промежуточные итоги.</span></li>
+							<li class="tab-opis-vid"><span>Как профессионально использовать функцию ЕСЛИ.</span></li>
+							<li class="tab-opis-vid"><span>Как форматировать ячейки в зависимости от данных в них.</span></li>
+							<li class="tab-opis-vid"><span>Что такое мгновенное заполнение и как им пользоваться.</span></li>
+						</ul>
+						<p class="bold">Преимущества курса:</p>
+						<ul>
+							<li class="tab-opis-vid"><span>54 урока, более 4 часов материала.</span></li>
+							<li class="tab-opis-vid"><span>Курс создавали эксперты работы в программе.</span></li>
+							<li class="tab-opis-vid"><span>Курс сделан очень качественно, его приятно проходить.</span></li>
+							<li class="tab-opis-vid"><span>Легко воспринимается.</span></li>
+							<li class="tab-opis-vid"><span>Интерактивные тренировки, где вы можете опробовать изучаемые навыки.</span></li>
+							<li class="tab-opis-vid"><span>Вы можете скачать Файлы с данными, с помощью которых мы делали этот курс.</span></li>
+						</ul>
+					</div>
+					<div id="tab-comm" class="info-panel tab-comment hidden">
+						<div class="new-comm">
+							<form action="">
+								<textarea placeholder="Оставьте комментарий"></textarea>
+								<input type="submit" value="Написать">
+							</form>
+						</div>
+						<ul class="comment-list">
+							<li class="comment">
+								<div class="comm-body">
+									<div class="user-avatar"><img src="../../img/avatar2.png" alt=""></div>
+									<div class="text-body">
+										<span class="user-name">Костя</span>
+										<span class="comm-data">12.05.2016</span>
+										<p class="comm-text">Ну курс норм так. Услышал о фишках, а которых даже не догадывала которых даже не догадывал</p>
+										<a href="" class="reply">Ответить</a>
+									</div>
+								</div>
+								<div class="reply-form hidden">
+									<form action="">
+										<textarea placeholder="Оставьте комментарий"></textarea>
+										<input type="submit" value="Ответить">
+									</form>
+								</div>
+							</li>
+							<li class="comment">
+								<div class="comm-body">
+									<div class="user-avatar"><img src="../../img/avatar.png" alt=""></div>
+									<div class="text-body">
+										<span class="user-name">Иван Васильевич</span>
+										<span class="comm-data">10.03.2016</span>
+										<p class="comm-text">Не к чему придраться. Всё четко и лаконично. Стоит своих денег</p>
+										<a href="" class="reply">Ответить</a>
+									</div>
+								</div>
+								<div class="reply-form hidden">
+									<form action="">
+										<textarea placeholder="Оставьте комментарий"></textarea>
+										<input type="submit" value="Ответить">
+									</form>
+								</div>
+							</li>
+							<li class="comment">
+								<div class="comm-body">
+									<div class="user-avatar"><img src="../../img/avatar3.png" alt=""></div>
+									<div class="text-body">
+										<span class="user-name">Kung Fury</span>
+										<span class="comm-data">04.03.2016</span>
+										<p class="comm-text">Понравился курс, жаль у меня екселя нет</p>
+										<a href="" class="reply">Ответить</a>
+									</div>
+								</div>
+								<ul class="children-list">
+									<li class="comment">
+										<div class="comm-body">
+											<div class="user-avatar"><img src="../../img/avatar2.png" alt=""></div>
+											<div class="text-body">
+												<span class="user-name">Гость</span>
+												<span class="comm-data">12.05.2016</span>
+												<p class="comm-text">Советуем установить. Появится возможность применить полученные </p>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="reply-form hidden">
+									<form action="">
+										<textarea placeholder="Оставьте комментарий"></textarea>
+										<input type="submit" value="Ответить">
+									</form>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="tab-file" class="info-panel tab-file hidden">
+						<ul class="file-list">
+							<li><a href=""><img src="../../img/materiali.png" alt=""><span>Материалы для прохождения курса</span></a></li>
+							<li><a href=""><img src="../../img/izobr.png" alt=""><span>Изображение 1</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="related">
+				<p class="related-title">Связанные курсы</p>
+				<ul class="rel-list">
+					<li>
+						<a href="">
+							<div class="rel-wrapp">
+								<div class="c-letter exel-letter">Б</div>
+								<div class="rel-title">
+									<div class="rel-name bold">Excel 2016. Базовый курс</div>
+									<div class="rel-rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="rel-wrapp">
+								<div class="c-letter exel-letter">М</div>
+								<div class="rel-title">
+									<div class="rel-name bold">Excel 2016. Мастерский курс</div>
+									<div class="rel-rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="rel-wrapp">
+								<div class="c-letter word-letter">Б</div>
+								<div class="rel-title">
+									<div class="rel-name bold">Word 2016. Базовый курс</div>
+									<div class="rel-rate">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-logo">
+			<a href=""><img src="../../img/logo-footer.png" alt=""></a>
+			<p>© 2014 Skill.im Все права защищены.</p>
+		</div>
+		<ul class="footer-cont">
+			<li><a href="skype:kakoy_to_skype"><i class="fa fa-skype" aria-hidden="true"></i><span>kakoy_to_skype</span></a></li>
+			<li><a href="mailto:info@skill.im"><img src="../../img/mail-icon.png" alt=""><span>info@skill.im</span></a></li>
+			<li><a href="tel:+380930055111"><div class="div-icon"><i class="fa fa-phone" aria-hidden="true"></i></div><span>(093) 005 51 11</span></a></li>
+			<li><a href=""><img src="../../img/youtube-icon.png" alt=""></a></li>
+		</ul>
+		<i class="fa fa-chevron-up" aria-hidden="true"></i>
+	</div>
+</body>
+</html>
