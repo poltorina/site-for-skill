@@ -2924,7 +2924,7 @@ textarea:focus {
 	.const-wrapp .single-card {
 	    height: 45px;
 	}
-	.const-wrapp .part-list>li .part-prev {
+	.const-wrapp .right-col .part-list>li .part-prev {
 	    padding-right: 68px;
     	min-height: 80px;
 	}
