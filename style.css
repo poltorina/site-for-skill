@@ -2314,6 +2314,10 @@ textarea:focus {
 	border: 1px solid rgb(235, 235, 235);
 	border-radius: 2px;
 }
+ 
+.const-wrapp .single-course>li:last-child {
+	margin-bottom: 0;
+}
 
 .const-wrapp .single-card {
 	height: 54px;
@@ -2345,6 +2349,7 @@ textarea:focus {
 	font-size: 20px;
 	font-weight: 600;
 	color: rgb(43, 47, 38);
+	line-height: 1.4;
 }
  
 .const-wrapp .expand {
@@ -2365,6 +2370,7 @@ textarea:focus {
 
 .const-wrapp .left-col .part-list {
 	max-height: 0;
+	width: 100%;
 	overflow: hidden;
 	border-radius: 3px;
     -webkit-transition: all 1.7s ease-out;
@@ -2429,7 +2435,7 @@ textarea:focus {
 .const-wrapp .part-list .expand {
 	position: absolute;
 	right: 62px;
-	top: 18px;
+	top: 22px;
 	font-size: 20px;
 	cursor: pointer;
 }
@@ -2437,7 +2443,7 @@ textarea:focus {
 .const-wrapp .part-list .add {
     position: absolute;
     right: 12px;
-    top: 13px;
+    top: 18px;
     text-align: center;
     cursor: pointer;
     border: 1px rgb(54, 62, 67) solid;
@@ -2448,12 +2454,12 @@ textarea:focus {
 
 .const-wrapp .part-list>li:hover .expand {
 	right: 61px;
-	top: 17px;
+	top: 21px;
 }
 
 .const-wrapp .part-list>li:hover .add {
     right: 11px;
-    top: 12px;
+    top: 17px;
 }
  
 .const-wrapp .part-list .add span {
@@ -2536,11 +2542,11 @@ textarea:focus {
 }
 
 .const-wrapp .right-col form {
-	height: 90px;
 }
 
 .const-wrapp .download-img {
 	position: relative;
+	margin-right: 15px;
 	border-radius: 2px;
 	background-color: rgb(215, 215, 215);
 	width: 160px;
@@ -2575,12 +2581,10 @@ textarea:focus {
 	font-size: 24px;
 	color: rgb(193, 193, 193);
 	background-color: transparent;
-	padding-left: 15px;
 }
 
 .const-wrapp .form-button {
     margin-top: 25px;
-    margin-left: 177px;
 }
 
 .const-wrapp .form-button input {
@@ -2867,6 +2871,13 @@ textarea:focus {
 	}
 }
 @media screen and (max-width: 550px) {
+	.const-wrapp .enter-title {
+	    font-size: 20px;
+	    padding: 5px 0;
+	}
+	.const-wrapp .form-button {
+	    margin-top: 20px;
+	}
 	.courses-wrapp {
 		padding: 40px 0;
 	}
@@ -2881,6 +2892,101 @@ textarea:focus {
 	.courses-wrapp .menu-active {
 		width: 193px;
 		opacity: 1;
+	}
+}
+@media screen and (max-width: 480px) {
+	.const-wrapp .wrapp-title {
+		padding: 10px;
+	}
+	.const-wrapp .wrapp-title h3 {
+	    font-size: 22px;
+	    padding-bottom: 5px;
+	}
+	.const-wrapp .wrapp-title p {
+	    font-size: 12px;
+	}
+	.const-wrapp p {
+		font-size: 18px;
+		line-height: 1.3;
+	}
+	.const-wrapp .left-col,
+	.const-wrapp .right-col {
+		padding: 15px;
+	}
+	.const-wrapp .single-course>li {
+		padding: 10px;
+	}
+	.const-wrapp .single-card .c-letter {
+		width: 45px;
+		height: 45px;
+		font-size: 28px;
+	}
+	.const-wrapp .single-card {
+	    height: 45px;
+	}
+	.const-wrapp .part-list>li .part-prev {
+	    padding-right: 68px;
+    	min-height: 80px;
+	}
+	.const-wrapp .right-col .part-list li .part-prev {
+		padding-right: 95px;	
+	}
+	.const-wrapp .right-col .part-list .course-move {
+	    top: 63px;
+	}
+	.const-wrapp .right-col .part-list .course-down {
+	    right: 65px;
+	}
+	.const-wrapp .right-col .part-list>li:hover .course-down {
+	    right: 64px;
+	    top: 62px;
+	}
+	.const-wrapp .right-col .part-list .course-up {
+	    right: 12px;
+	}
+	.const-wrapp .right-col .part-list>li:hover .course-up {
+	    right: 11px;
+	    top: 62px;
+	}
+	.const-wrapp .right-col .part-list .expand {
+		right: 73px;
+	}
+	.const-wrapp .right-col .part-list>li:hover .expand {
+		right: 72px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.const-wrapp .enter-title {
+	    padding-right: 4px;
+	    margin-top: 10px;
+	}
+	.const-wrapp .form-button {
+	    margin-top: 10px;
 	}
 }
 @media screen and (min-width: 678px) and (max-width: 899px) {
