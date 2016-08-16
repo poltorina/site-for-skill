@@ -67,9 +67,7 @@ textarea {
 #overlay {
   z-index: 3000;
   position: fixed;
-  background-color: #000;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  background-color: rgba(0, 0, 1, 0.4);
   width: 100%;
   height: 100%;
   top: 0;
@@ -129,6 +127,10 @@ textarea {
       border-bottom: 3px solid #6db40d; }
       .header .menu > .active a {
         color: #fff; }
+    .header .menu li {
+      padding: 25px 8px; }
+    .header .menu.active-mobile li {
+      display: block; }
   .header .loggin {
     float: right;
     position: relative;
@@ -141,6 +143,19 @@ textarea {
       text-align: center;
       font-size: 18px;
       cursor: pointer; }
+      .header .loggin .header-user .user-wrapp {
+        height: 100%; }
+        .header .loggin .header-user .user-wrapp span {
+          vertical-align: middle;
+          padding-right: 15px;
+          color: #cacccd;
+          font-family: Roboto;
+          font-weight: bold; }
+        .header .loggin .header-user .user-wrapp img {
+          vertical-align: middle;
+          height: 100%; }
+        .header .loggin .header-user .user-wrapp:hover span {
+          color: #e2f0cf; }
     .header .loggin button {
       padding: 6px;
       margin: 0 4px;
@@ -164,7 +179,7 @@ textarea {
       padding: 9px 10px;
       font-family: GloberBoldFree; }
       .header .loggin .to-reg:hover {
-        background-color: #6db40d; }
+        background-color: #64a70c; }
   .header .user-menu {
     position: absolute;
     right: 0;
@@ -315,7 +330,7 @@ textarea {
       padding: 9px 15px;
       float: left; }
       .header .enter-form form input[type=submit]:hover {
-        background-color: #6db40d; }
+        background-color: #64a70c; }
     .header .enter-form form .soc-icon {
       display: inline-block;
       vertical-align: middle;
@@ -331,7 +346,8 @@ textarea {
       background-color: #4c8103; }
       .header .enter-form form .soc-icon:hover {
         background-color: #fff;
-        border: 2px solid #4c8103; }
+        border: 2px solid #4c8103;
+        color: #4c8103; }
     .header .enter-form form a {
       color: #fff; }
       .header .enter-form form a .fa-facebook {
@@ -349,8 +365,6 @@ textarea {
       height: 72px;
       border-top: 1px solid #ebebeb;
       padding: 24px 0; }
-    .header .enter-form .soc-icon:hover {
-      color: #4c8103; }
   .header .reg {
     width: 500px;
     height: 397px;
@@ -396,39 +410,15 @@ textarea {
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
-    .header .mobile-menu-btn.active {
+    .header .mobile-menu-btn.active, .header .mobile-menu-btn:hover {
       color: #86e010;
       -webkit-transition: all 0.3s ease-out;
       -moz-transition: all 0.3s ease-out;
       -ms-transition: all 0.3s ease-out;
       -o-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out; }
-    .header .mobile-menu-btn:hover {
-      color: #86e010;
-      -webkit-transition: all 0.3s ease-out;
-      -moz-transition: all 0.3s ease-out;
-      -ms-transition: all 0.3s ease-out;
-      -o-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out; }
-  .header .header-user .user-wrapp {
-    height: 100%; }
-    .header .header-user .user-wrapp span {
-      vertical-align: middle;
-      padding-right: 15px;
-      color: #cacccd;
-      font-family: Roboto;
-      font-weight: bold; }
-    .header .header-user .user-wrapp img {
-      vertical-align: middle;
-      height: 100%; }
-    .header .header-user .user-wrapp:hover span {
-      color: #e2f0cf; }
 
-.menu li {
-  padding: 25px 8px; }
-.menu.active-mobile li {
-  display: block; }
-
+/*glavnaya start*/
 .anons {
   height: 72px;
   width: 100%;
@@ -799,7 +789,7 @@ textarea {
     letter-spacing: 0.5px;
     background-color: #6db40d; }
     .course-top .button button:hover {
-      background-color: #6db40d; }
+      background-color: #64a70c; }
   .course-top .button .info-prise span {
     color: #abdc68;
     font-size: 18px; }
