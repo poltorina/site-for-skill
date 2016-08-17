@@ -119,7 +119,6 @@ $(document).ready(function() {
 	  }
 	  e.stopPropagation();
 	});
-
 		
 		// setTimeout(setEqualHeight, 1000, $(".left-col, .right-col"));
 });
@@ -142,6 +141,26 @@ window.addEventListener('resize', function(){
 }, true);
 
 function resizeDiv(){
+	//player size
+	$(function(){
+	    var win = $(window);
+	    var descrWidth;
+	    var aspect = 16/9;
+	    var resizeVideoContent = function() {
+	        var w = win.width() - 70;
+	        var h = win.height() - 156;
+	        if(w/h>aspect) {
+	            $('.video-container').height(h);
+	            $('.video-content').width(h*aspect);
+	        }
+	        else {
+	            $('.video-content').width(w);
+	            $('.video-container').height(w/aspect);
+	        }
+	    }
+	    resizeVideoContent();
+	});
+
 	$('.rel-title').each(function(i,elem) {
 		if ($(this).height() < 35) {
 			$(this).find('.rel-name').css('display', 'block');

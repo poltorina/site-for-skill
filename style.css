@@ -2724,15 +2724,16 @@ textarea:focus {
     background-image: -ms-linear-gradient( 90deg, rgb(72,81,87) 0%, rgb(38,45,50) 100%);
 }
 
-.video-block {
-    width: 100%;
-    height: 100%;
+.video-container {
+	height: 85%;
 }
 
-.video-block video {
-    width: 100%;
-    max-height: calc(100vh - 170px);
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+.video-content{
+	position: relative;
+	height: 100%;
+	width: 75%;
+	margin:0 auto;
+	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 .nav-less {
@@ -2742,9 +2743,9 @@ textarea:focus {
 }
 
 .nav-less a {
-  font-size: 16px;
-  font-family: "GloberBoldFree";
-  color: rgb(149, 149, 149);
+	font-size: 16px;
+	font-family: "GloberBoldFree";
+	color: rgb(149, 149, 149);
 }
 
 .nav-less .prev-less {
@@ -2763,6 +2764,7 @@ textarea:focus {
 
 .nav-less .prev-less:hover {
     background: url(img/border-left-hov.png) no-repeat;
+    background-size: cover;
     color: white;
     -webkit-transition: all 0.3s ease-out;
        -moz-transition: all 0.3s ease-out;
@@ -2785,6 +2787,8 @@ textarea:focus {
 }
 
 .nav-less .next-less:hover {
+    background: url(img/border-right-hov.png) no-repeat;
+    background-size: cover;
     color: white;
     -webkit-transition: all 0.3s ease-out;
        -moz-transition: all 0.3s ease-out;
@@ -2956,6 +2960,19 @@ textarea:focus {
 	    font-size: 16px;
 	    padding-top: 15px;
 	}
+	.nav-less a {
+		font-size: 12px;
+	}
+	.nav-less .prev-less {
+	    width: 145px;
+	    height: 25px;
+    	padding: 8px;
+	}
+	.nav-less .next-less {
+	    width: 134px;
+	    height: 25px;
+	    padding: 8px;
+	}
 }
 @media screen and (max-width: 550px) {
 	.const-wrapp .enter-title {
@@ -3041,33 +3058,6 @@ textarea:focus {
 	.const-wrapp .right-col .part-list>li:hover .expand {
 		right: 72px;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	.const-wrapp .enter-title {
 	    padding-right: 4px;
 	    margin-top: 10px;
