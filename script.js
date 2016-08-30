@@ -60,6 +60,12 @@ $(document).ready(function() {
 
 	});
 
+	$('.course-bottom .show-bought label').hover(function() {
+		$('.course-bottom .show-bought .speech-bubble').addClass('hint');
+	}, function() {
+		$('.course-bottom .show-bought .speech-bubble').removeClass('hint');
+	});
+
 	$('.course-bottom .tabs li').click(function() {
 		$('.course-bottom .tabs li').removeClass('active');
 		$(this).addClass('active');

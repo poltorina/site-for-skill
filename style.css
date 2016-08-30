@@ -1715,6 +1715,96 @@ textarea:focus {
 /*card/bought end*/
 
 
+/*card/partly start*/
+.course-bottom .show-bought {
+    padding-bottom: 20px;
+    text-align: right;
+    position: relative;
+}
+
+.course-bottom .show-bought input {
+    position: absolute;
+    opacity: 0;
+}
+
+.course-bottom .show-bought label {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(54, 62, 67);
+    position: relative;
+    padding-right: 35px;
+    cursor: pointer;
+}
+
+.course-bottom .show-bought label:before {
+    background: rgba(0, 0, 0, 0) url(img/check-show.png) no-repeat;
+    background-position: 0 -20px;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -11px;
+    z-index: 5;
+    content: '';
+}
+
+.course-bottom .show-bought input:checked + label:before {
+    background-position: 0 0;
+}
+
+.course-bottom .show-bought .hint {
+	opacity: 1;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
+}
+
+.speech-bubble {
+	opacity: 0;
+	height: 100px;
+	width: 316px;
+    top: -130px;
+    right: -148px;
+    position: absolute;
+    z-index: 100;
+    padding-top: 15px;
+	background-color: rgb(237, 99, 105);
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
+}
+ 
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 15px solid;
+}
+ 
+.speech-bubble-bottom:after {
+	border-top-color: rgb(237, 99, 105);
+	top: 100%;
+	left: 50%;
+	margin-left: -15px;
+}
+
+.speech-bubble span {
+	font-size: 18px;
+	font-family: "Roboto";
+}
+
+/*card/partly end*/
+
+
 /*payment starst*/
 
 .payment-wrapp {
@@ -3159,6 +3249,12 @@ textarea:focus {
 	.course-bottom .corse-content {
 		width: 100%;
 	}
+	.speech-bubble {
+	    right: -30px;
+	}
+	.speech-bubble-bottom:after {
+		left: 87%;
+	}
 	.course-bottom .tabs li {
 		width: 50%;
 	}
@@ -3200,6 +3296,12 @@ textarea:focus {
 		width: 640px;
 		padding-left: 0;
 		padding-top: 20px;
+	}
+	.speech-bubble {
+	    right: -30px;
+	}
+	.speech-bubble-bottom:after {
+		left: 87%;
 	}
 	.const-wrapp .left-col {
 		width: 606px;
