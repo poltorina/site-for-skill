@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>courses</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100&#38;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="../style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<a href="" class="logo"><img src="../img/logo.png" alt=""></a>
+			<a href="" class="mobile-menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			<ul class="menu">
+				<li class="active"><a href="">Курсы</a></li>
+				<li><a href="">О компании</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+			<div class="loggin">
+				<div class="header-user hidden">
+					<div class="user-wrapp">
+	  					<span>Иван</span>
+	  					<img src="../img/avatar.png" alt="">
+	  				</div>
+	  				<div class="user-menu">
+	  					<ul>
+	  						<li><a href="">
+	  								<div>
+	  									<i class="fa fa-user" aria-hidden="true"></i><span>Профиль</span>
+	  								</div>
+	  							</a></li>
+	  						<li><a href="">
+	  								<div>
+	  									<i class="fa fa-cog" aria-hidden="true"></i><span>Настройки</span>
+	  								</div>
+	  							</a></li>
+	  						<li><a href="">
+	  								<div>
+	  									<i class="fa fa-question" aria-hidden="true"></i><span>Помощь</span>
+	  								</div>
+	  							</a></li>
+	  						<li><a href="">
+	  								<div>
+	  									<img src="../img/logout.png" alt=""><span>Выход</span>
+	  								</div>
+	  							</a></li>
+	  					</ul>
+	  				</div>
+  				</div>
+				<button class="to-sign">Войти</button>
+				<button class="to-reg">Зарегистрироваться</button>
+			</div>
+			<div class="enter-form reg">
+				<div class="form-wrapp">
+					<div class="enter-title">Добро пожаловать!</div>
+					<div class="enter-info">Для просмотра курсов, пожалуйста, зарегистрируйтесь</div>
+					<form>
+						<input type="text" placeholder="Имя" name="name">
+						<input type="text" placeholder="Email" name="email">
+						<input type="password" placeholder="Пароль" name="password">
+						<div class="form-sub">
+							<input type="submit" value="Зарегистрироваться">
+							<a href=""><div class="soc-icon soc-vk"><i class="fa fa-vk" aria-hidden="true"></i></div></a>
+							<a href=""><div class="soc-icon soc-fb"><i class="fa fa-facebook" aria-hidden="true"></i></div></a>
+						</div>
+					</form>
+				</div>
+				<div class="sugg">
+					<span>Есть учётна запись?</span>
+					<span class="sugg-link to-sign">Войдите!</span>
+				</div>
+			</div>
+			<div class="enter-form signin">
+				<div class="form-wrapp">
+					<div class="enter-title">Добро пожаловать!</div>
+					<div class="enter-info">Для просмотра курсов, пожалуйста, авторизуйтесь</div>
+					<form>
+						<input type="text" placeholder="Email" name="email">
+						<input type="password" placeholder="Пароль" name="password">
+						<div class="form-sub">
+							<input type="submit" value="Войти">
+							<span class="forgot-pass">Забыли пароль?</span>
+							<a href=""><div class="soc-icon soc-vk"><i class="fa fa-vk" aria-hidden="true"></i></div></a>
+							<a href=""><div class="soc-icon soc-fb"><i class="fa fa-facebook" aria-hidden="true"></i></div></a>
+						</div>
+					</form>
+				</div>
+				<div class="sugg">
+					<span>Нет учётной записи?</span>
+					<span class="sugg-link to-reg">Зарегистрируйтесь!</span>
+				</div>
+			</div>
+			<div class="enter-form forgot">
+				<div class="form-wrapp">
+					<div class="enter-title">ВОсстановление пароля!</div>
+					<div class="enter-info">Введите <b>email</b> и мы вышлем ссылку на востановление пароля</div>
+					<form>
+						<input type="text" placeholder="Email" name="email">
+						<div class="form-sub">
+							<input type="submit" value="Выслать пароль">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="overlay"></div>
+		</div>
+		<div class="top-menu-button">
+			<ul class="tabs">
+				<li class="tab-learn active">Обучение</li>
+				<li class="tab-like">Избранное</li>
+				<li class="tab-stat">Статистика</li>
+			</ul>
+			<div class="tabs-panel">
+				<div id="tab-learn" class="info-panel">
+					<div class="courses-wrapp">
+						<div class="courses-menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></div>
+						<div class="courses-menu">
+							<ul class="menu-list">
+								<li class="name-list">
+									<a href="">
+										<div><img src="../img/ms-office.png" alt=""><span>MS Office</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div><img src="../img/msword-b.png" alt=""><span>Word</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div><img src="../img/mspowerpoint-b.png" alt=""><span>PowerPoint</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div><img src="../img/msexcel-b.png" alt=""><span>Excel</span></div>
+									</a>
+									<ul class="menu-children">
+										<li class="name-list">
+											<a href="">
+												<div><img src="../img/ms-office.png" alt=""><span>MS Office</span></div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div><img src="../img/msword-b.png" alt=""><span>Word</span></div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div><img src="../img/mspowerpoint-b.png" alt=""><span>PowerPoint</span></div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div><img src="../img/msexcel-b.png" alt=""><span>Excel</span></div>
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<a href="">
+							<div class="course ms-word">
+								<div class="course-th">
+									<img class="thumb" src="../img/courses1.png" alt="">
+									<div class="course-th-m">
+										<img src="../img/eye.png" alt="">
+									</div>
+								</div>
+								<div class="info">
+									<div class="c-title"><p>MS Word 2016: Базовый курс</p></div>
+									<div class="progress">
+										<progress max="100" value="0"></progress>
+										<div class="progress-value">Пройдено 12%</div>
+										<div class="progress-bg"><div class="progress-bar"></div></div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="">
+							<div class="course ms-exel">
+								<div class="course-th">
+									<img class="thumb" src="../img/courses2.png" alt="">
+									<div class="course-th-m">
+										<img src="../img/eye.png" alt="">
+									</div>
+								</div>
+								<div class="info">
+									<div class="c-title"><p>MS Word 2016: Продвинутый курс</p></div>
+									<div class="progress">
+										<progress max="100" value="0"></progress>
+										<div class="progress-value">Пройдено 12%</div>
+										<div class="progress-bg"><div class="progress-bar"></div></div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="">
+							<div class="course ms-pp">
+								<div class="course-th">
+									<img class="thumb" src="../img/courses3.png" alt="">
+									<div class="course-th-m">
+										<img src="../img/eye.png" alt="">
+									</div>
+								</div>
+								<div class="info">
+									<div class="c-title"><p>MS Word 2016: Мастерский курс</p></div>
+									<div class="progress">
+										<progress max="100" value="0"></progress>
+										<div class="progress-value">Пройдено 12%</div>
+										<div class="progress-bg"><div class="progress-bar"></div></div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div id="tab-like" class="info-panel hidden">
+					<div class="courses-wrapp">
+						<a href="">
+							<div class="course ms-word">
+								<div class="course-th">
+									<img class="thumb" src="../img/courses1.png" alt="">
+									<div class="course-th-m">
+										<img src="../img/eye.png" alt="">
+									</div>
+								</div>
+								<div class="info">
+									<div class="c-title"><p>MS Word 2016: Базовый курс</p></div>
+									<div class="progress">
+										<progress max="100" value="0"></progress>
+										<div class="progress-value">Пройдено 12%</div>
+										<div class="progress-bg"><div class="progress-bar"></div></div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="">
+							<div class="course ms-exel">
+								<div class="course-th">
+									<img class="thumb" src="../img/courses2.png" alt="">
+									<div class="course-th-m">
+										<img src="../img/eye.png" alt="">
+									</div>
+								</div>
+								<div class="info">
+									<div class="c-title"><p>MS Word 2016: Продвинутый курс</p></div>
+									<div class="progress">
+										<progress max="100" value="0"></progress>
+										<div class="progress-value">Пройдено 12%</div>
+										<div class="progress-bg"><div class="progress-bar"></div></div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="">
+							<div class="course ms-pp">
+								<div class="course-th">
+									<img class="thumb" src="../img/courses3.png" alt="">
+									<div class="course-th-m">
+										<img src="../img/eye.png" alt="">
+									</div>
+								</div>
+								<div class="info">
+									<div class="c-title"><p>MS Word 2016: Мастерский курс</p></div>
+									<div class="progress">
+										<progress max="100" value="0"></progress>
+										<div class="progress-value">Пройдено 12%</div>
+										<div class="progress-bg"><div class="progress-bar"></div></div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div id="tab-stat" class="info-panel hidden"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-logo">
+			<a href=""><img src="../img/logo-footer.png" alt=""></a>
+			<p>© 2014 Skill.im Все права защищены.</p>
+		</div>
+		<ul class="footer-cont">
+			<li><a href="skype:kakoy_to_skype"><i class="fa fa-skype" aria-hidden="true"></i><span>kakoy_to_skype</span></a></li>
+			<li><a href="mailto:info@skill.im"><img src="../img/mail-icon.png" alt=""><span>info@skill.im</span></a></li>
+			<li><a href="tel:+380930055111"><div class="div-icon"><i class="fa fa-phone" aria-hidden="true"></i></div><span>(093) 005 51 11</span></a></li>
+			<li><a href=""><img src="../img/youtube-icon.png" alt=""></a></li>
+		</ul>
+		<i class="fa fa-chevron-up" aria-hidden="true"></i>
+	</div>
+</body>
+</html>

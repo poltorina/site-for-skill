@@ -125,21 +125,17 @@ $(document).ready(function() {
 	  }
 	  e.stopPropagation();
 	});
-		
-		// setTimeout(setEqualHeight, 1000, $(".left-col, .right-col"));
+	
+
+
+	$('.top-menu-button .tabs li').click(function() {
+		$('.top-menu-button .tabs li').removeClass('active');
+		$(this).addClass('active');
+		$('.info-panel').addClass('hidden');
+		let firstClass = $(this).attr('class').split(' ')[0];
+		$('#' + firstClass).removeClass('hidden');
+	})
 });
-	// function setEqualHeight(columns) {
-	// 	var tallestcolumn = 0;
-	// 	columns.each(function() {
-	// 		$(this).css('height', 'auto')
-	// 		currentHeight = $(this).height();
-	// 		console.log($(this).height())
-	// 		if(currentHeight > tallestcolumn) {
-	// 			tallestcolumn = currentHeight;
-	// 		}
-	// 	});
-	// 	columns.height(tallestcolumn);
-	// }
 
 window.onload = resizeDiv;
 window.addEventListener('resize', function(){

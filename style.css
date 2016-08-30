@@ -2893,6 +2893,153 @@ textarea:focus {
 
 /*proigr end*/
 
+/*my-courses start*/
+
+.top-menu-button {
+}
+
+.top-menu-button .tabs {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.top-menu-button .tabs li {
+    background-color: rgb(248, 248, 248);
+    width: 175px;
+    height: 54px;
+    position: relative;
+    display: inline-block;
+    padding-top: 15px;
+	border: 1px solid rgb(235, 235, 235);
+	font-size: 16px;
+	font-family: "Roboto";
+	color: rgb(137, 137, 137);
+    font-weight: 600;
+    margin-left: -4px;
+    padding-top: 15px;
+    cursor: pointer;
+	border-right: none;
+}
+
+.top-menu-button .tabs li:first-child {
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.top-menu-button .tabs li:last-child {
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	border-right: 1px solid rgb(235, 235, 235);
+}
+
+.top-menu-button .tabs li.active {
+    background-color: #fff;
+	color: rgb(93, 161, 0);
+}
+
+.top-menu-button #tab-learn .courses-wrapp {
+    padding-top: 15px;
+}
+
+.top-menu-button #tab-learn .courses-menu {
+	top: 154px;
+}
+
+.top-menu-button #tab-like .courses-wrapp {
+    padding: 15px 20px;
+}
+
+.top-menu-button .courses-wrapp .course {
+    height: 310px;
+}
+
+.course .progress {
+	position: relative;
+	overflow: hidden;
+}
+
+.course .progress progress {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    left: -777px;
+}
+
+.course .progress-bar {
+	overflow: hidden;
+	background: #abdc68;
+	width: 12%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+}
+
+.course .progress-value {
+	display: block;
+	line-height: 21px;
+	text-align: center;
+	font-size: 12px;
+	color: rgb(101, 107, 111);
+	font-style: italic;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+}
+
+.course .progress-bg {
+	background: white;
+	position: relative;
+	height: 18px;
+	border-radius: 15px;
+	overflow: hidden;
+    border: 1px solid rgb(225, 225, 225);
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+}
+
+.courses-wrapp .course:hover .progress-value {
+    color: rgba(156, 162, 165, 1);
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+}
+
+.courses-wrapp .course:hover .progress-bg {
+    border: 1px solid rgba(235, 235, 235, 1);
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+}
+
+.courses-wrapp .course:hover .progress-bar {
+    background: #cdeaa5;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+}
+
+/*my-courses end*/
+
 /*footer start*/
 
 .footer {
@@ -2997,6 +3144,9 @@ textarea:focus {
 	.course-top .course-info {
     	height: 450px;
 	}
+	.top-menu-button #tab-like .courses-wrapp {
+	    padding: 15px 0;
+	}
 }
 @media screen and (max-width: 510px) {
 	.header .enter-form {
@@ -3091,6 +3241,13 @@ textarea:focus {
 	.courses-wrapp .menu-active {
 		width: 193px;
 		opacity: 1;
+	}
+	.top-menu-button .tabs li {
+		display: block;
+		margin: 0 auto;
+	}
+	.top-menu-button #tab-learn .courses-menu {
+    	top: 110px;
 	}
 }
 @media screen and (max-width: 480px) {
