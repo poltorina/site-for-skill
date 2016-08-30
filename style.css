@@ -1728,6 +1728,7 @@ textarea:focus {
 }
 
 .course-bottom .show-bought label {
+	display: block;
     font-size: 14px;
     font-family: "Roboto";
     color: rgb(54, 62, 67);
@@ -1757,29 +1758,31 @@ textarea:focus {
 
 .course-bottom .show-bought .hint {
 	opacity: 1;
-    -webkit-transition: all 0.3s ease-out;
-       -moz-transition: all 0.3s ease-out;
-     	 -o-transition: all 0.3s ease-out;
-    		transition: all 0.3s ease-out;
+	height: 100px;
+	overflow: inherit;
+    -webkit-transition: opacity 0.5s ease-out;
+       -moz-transition: opacity 0.5s ease-out;
+     	 -o-transition: opacity 0.5s ease-out;
+    		transition: opacity 0.5s ease-out;
 }
 
 .speech-bubble {
 	opacity: 0;
-	height: 100px;
+	height: 0;
+	overflow: hidden;
 	width: 316px;
-    top: -130px;
+    top: -132px;
     right: -148px;
     position: absolute;
-    z-index: 100;
-    padding-top: 15px;
+    z-index: 10;
 	background-color: rgb(237, 99, 105);
 	color: white;
 	text-align: center;
 	border-radius: 5px;
-    -webkit-transition: all 0.3s ease-out;
-       -moz-transition: all 0.3s ease-out;
-     	 -o-transition: all 0.3s ease-out;
-    		transition: all 0.3s ease-out;
+    -webkit-transition: opacity 0.5s ease-out;
+       -moz-transition: opacity 0.5s ease-out;
+     	 -o-transition: opacity 0.5s ease-out;
+    		transition: opacity 0.5s ease-out;
 }
  
 .speech-bubble:after {
@@ -1800,6 +1803,8 @@ textarea:focus {
 .speech-bubble span {
 	font-size: 18px;
 	font-family: "Roboto";
+    top: 15px;
+    position: relative;
 }
 
 /*card/partly end*/
@@ -3250,10 +3255,16 @@ textarea:focus {
 		width: 100%;
 	}
 	.speech-bubble {
-	    right: -30px;
+	    right: -23px;
+	    height: 80px;
+	    width: 290px;
+	    top: -112px;
 	}
 	.speech-bubble-bottom:after {
-		left: 87%;
+		left: 89%;
+	}
+	.speech-bubble span {
+    	font-size: 16px;
 	}
 	.course-bottom .tabs li {
 		width: 50%;
