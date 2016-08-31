@@ -135,6 +135,18 @@ $(document).ready(function() {
 		let firstClass = $(this).attr('class').split(' ')[0];
 		$('#' + firstClass).removeClass('hidden');
 	})
+
+	$('.profile-wrapp .prof-name img').click(function() {
+		$('.profile-wrapp .prof-name input, .profile-wrapp .prof-name i').removeClass('hidden')
+		$('.profile-wrapp .prof-name span, .profile-wrapp .prof-name img').addClass('hidden');
+	});
+
+	$('.profile-wrapp .prof-name i').click(function() {
+		var profileName = $('.profile-wrapp .prof-name input').val();
+		$('.profile-wrapp .prof-name span').html(profileName)
+		$('.profile-wrapp .prof-name span, .profile-wrapp .prof-name img').removeClass('hidden')
+		$('.profile-wrapp .prof-name input, .profile-wrapp .prof-name i').addClass('hidden');
+	});
 });
 
 window.onload = resizeDiv;

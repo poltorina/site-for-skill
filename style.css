@@ -3040,6 +3040,301 @@ textarea:focus {
 
 /*my-courses end*/
 
+
+/*profile start*/
+
+.profile-wrapp {
+    padding: 15px 15px 40px 15px;
+	text-align: center;
+}
+
+.profile-wrapp .left-col {
+	display: inline-block;
+	vertical-align: top;
+	width: 294px;
+	height: 324px;
+	border: 1px solid rgb(235, 235, 235);
+	color: rgb(54, 62, 67);
+	border-radius: 3px;
+	background-color: #fff;
+	text-align: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.profile-wrapp .prof-info {
+	border-bottom: 1px solid rgb(235, 235, 235);
+	height: 234px;
+    text-align: center;
+    padding: 30px 10px 10px;
+}
+
+.profile-wrapp .image {
+	border: 5px solid rgb(171, 220, 104);
+	border-radius: 50%;
+	width: 136px;
+	height: 136px;
+	overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.profile-wrapp .image .bg-image {
+	opacity: 0;
+	position: absolute;
+    width: 100%;
+    height: 100%;
+	background-color: rgba(54, 62, 67, 0.5);
+	color: #fff;
+	font-size: 16px;
+	border-radius: 50%;
+    overflow: hidden;
+    -webkit-transition: opacity 0.3s ease-out;
+       -moz-transition: opacity 0.3s ease-out;
+         -o-transition: opacity 0.3s ease-out;
+            transition: opacity 0.3s ease-out;
+}
+
+.profile-wrapp .image:hover .bg-image {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-out;
+       -moz-transition: opacity 0.3s ease-out;
+         -o-transition: opacity 0.3s ease-out;
+            transition: opacity 0.3s ease-out;
+}
+
+.profile-wrapp .bg-image p {
+    padding-top: 53px;
+}
+
+.profile-wrapp .bg-image input {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+	opacity: 0;
+}
+
+.profile-wrapp .image img {
+	min-width: 100%;
+	min-height: 100%; 
+}
+
+.profile-wrapp .prof-name {
+	font-size: 18px;
+    padding-top: 25px;
+    position: relative;
+}
+
+.profile-wrapp .prof-name img {
+	width: 16px;
+	height: 15px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.profile-wrapp .prof-name input {
+	position: relative;
+    top: -5px;
+    width: 68%;
+    display: inline-block;
+    margin: 0;
+    height: 38px;
+	border: 1px solid rgb(54, 62, 67);
+	font-weight: 100;
+	border-radius: 3px;
+	font-size: 18px;
+	font-family: "Roboto";
+    padding: 5px 15px;
+}
+
+.profile-wrapp .prof-name i {
+    font-size: 20px;
+    vertical-align: super;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.profile-wrapp .prof-name i:hover {
+	color: rgb(93, 161, 0);
+}
+
+.profile-wrapp .my-courses {
+    padding: 15px 15px 0px;
+}
+
+.profile-wrapp .my-courses li {
+	font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.profile-wrapp .my-courses li .title-course {
+	display: inline-block;
+}
+
+.profile-wrapp .my-courses li .num {
+	float: right;
+	clear: both;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.profile-wrapp .right-col {
+	display: inline-block;
+	vertical-align: top;
+	width: 450px;
+	border: 1px solid rgb(235, 235, 235);
+	border-radius: 3px;
+	background-color: #fff;
+	text-align: left;
+}
+
+.profile-wrapp .right-title {
+	padding: 15px 35px;
+	font-size: 18px;
+	border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.profile-wrapp .right-data {
+    padding: 20px 35px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    position: relative;
+}
+
+.profile-wrapp .right-data .data-title {
+	font-size: 14px;
+}
+
+.profile-wrapp .right-data input[type=text],
+.profile-wrapp .right-data input[type=password] {
+	width: 100%;
+    height: 38px;
+	border: 1px solid rgb(54, 62, 67);
+	display: block;
+	margin-top: 13px;
+	font-weight: 100;
+	border-radius: 3px;
+	font-size: 18px;
+	font-family: "Roboto";
+    padding: 5px 15px;
+}
+
+.profile-wrapp .right-data input:focus,
+.profile-wrapp .right-data input:active,
+.profile-wrapp .prof-name input:focus,
+.profile-wrapp .prof-name input:active {
+	border: 1px solid rgb(171, 220, 104);
+}
+
+.profile-wrapp .prof-currency {
+	border: none;
+}
+
+.profile-wrapp .prof-currency input {
+	position: absolute;
+    top: 55px;
+    opacity: 0;
+}
+
+.label-curr {
+	display: inline-block;
+	font-size: 14px;
+	color: rgb(137, 137, 137);
+	padding-top: 15px;
+    cursor: pointer;
+    width: 80px;
+    position: relative;
+}
+
+.profile-wrapp .prof-currency label {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    padding: 18px 36px;
+}
+
+.profile-wrapp .prof-currency input:checked + .label-img + label,
+.profile-wrapp .prof-currency label:hover {
+	color: rgb(93, 161, 0);
+}
+
+.profile-wrapp .prof-currency .label-img {
+	height: 19px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 9px;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+}
+
+.profile-wrapp .rub .label-img {
+	width: 18px;
+	background: url(img/rub.png);
+}
+
+.profile-wrapp .prof-currency input:checked + .rub-img,
+.profile-wrapp .rub:hover .label-img {
+	background: url(img/rub-hov.png);
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+}
+
+.profile-wrapp .uah .label-img {
+	width: 16px;
+	background: url(img/uah.png);
+}
+
+.profile-wrapp .prof-currency input:checked + .uah-img,
+.profile-wrapp .uah:hover .label-img {
+	background: url(img/uah-hov.png);
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+}
+
+.profile-wrapp .usd .label-img {
+	width: 14px;
+	background: url(img/usd.png);
+}
+
+.profile-wrapp .prof-currency input:checked + .usd-img,
+.profile-wrapp .usd:hover .label-img {
+	background: url(img/usd-hov.png);
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+}
+
+.profile-wrapp .prof-save {
+	margin: 18px 35px;
+	height: 36px;
+    font-size: 18px;
+	background-color: #6db40d;
+	border-radius: 3px;
+	color: white;
+	padding: 9px 20px;
+	font-family: 'GloberBoldFree';
+}
+
+.profile-wrapp .prof-save:hover {
+	background-color: #64a70c;
+}
+
+/*profile end*/
+
+
 /*footer start*/
 
 .footer {
@@ -3147,6 +3442,12 @@ textarea:focus {
 	.top-menu-button #tab-like .courses-wrapp {
 	    padding: 15px 0;
 	}
+	.profile-wrapp {
+		padding: 15px 0 40px;
+	}
+	.profile-wrapp .prof-currency .label-curr {
+		width: 74px;
+	}
 }
 @media screen and (max-width: 510px) {
 	.header .enter-form {
@@ -3217,6 +3518,12 @@ textarea:focus {
 	    width: 134px;
 	    height: 25px;
 	    padding: 8px;
+	}
+	.profile-wrapp .left-col {
+		margin-right: 0;
+	}
+	.profile-wrapp .right-col {
+	    width: 100%;
 	}
 }
 @media screen and (max-width: 550px) {
