@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+	$('.slick-dots button').html('')
+
 	$('.header .header-user .user-wrapp').click(function() {
 		$('.user-menu ').toggleClass('user-menu-active');
 	});

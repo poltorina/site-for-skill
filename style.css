@@ -550,6 +550,106 @@ textarea:focus {
     		transition: all 0.3s ease-out;
 }
 
+/*slider start*/
+
+.slider .slider-wrap {
+	width: 100%;
+	height: 532px;
+	text-align: center;
+    background-position: 50%;
+    background-repeat: no-repeat;
+	background-image: url("img/slider1.png");
+	background-size: cover;
+}
+
+.slider .img-wrap {
+	width: 275px;
+	height: 160px;
+	padding: 5px;
+	border: 1px solid rgb(255, 255, 255);
+	position: relative;
+	display: inline-block;
+    margin-top: 170px;
+    margin-right: 50px;
+}
+
+.slider .img-wrap img {
+	height: 100%;
+	width: 100%;
+}
+
+.slider .text-wrap {
+	display: inline-block;
+	vertical-align: top;
+	width: 600px;
+    margin-top: 170px;
+    color: #fff;
+    text-align: left;
+}
+
+.slider .text-wrap h1 {
+	font-size: 27px;
+    padding-bottom: 20px;
+}
+
+.slider .text-wrap p {
+	font-size: 18px;
+	font-weight: 100;
+    margin-bottom: 26px;
+}
+
+.slider .text-wrap button {
+	padding: 9px 20px;
+	height: 36px;
+    font-size: 18px;
+	border-radius: 3px;
+	font-family: 'GloberBoldFree';
+	color: #fff;
+}
+
+.slider .text-wrap .free-but {
+	background-color: #5da100;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.slider .text-wrap .free-but:hover {
+	background-color: #7dd600;
+}
+
+.slider .text-wrap .go-to {
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+.slider .text-wrap .go-to:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.slider .slick-dots {
+	text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+.slider .slick-dots li {
+	display: inline-block;
+    padding-right: 15px;
+}
+
+.slider .slick-dots button {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.slider .slick-dots .slick-active button {
+	background-color: rgb(141, 198, 63);
+}
+
+/*slider end*/
+
 .last-seen {
 	height: 200px;
 	margin: 35px 4% 0;
@@ -3527,6 +3627,16 @@ textarea:focus {
 	}
 }
 @media screen and (max-width: 550px) {
+	.slider .img-wrap {
+	}
+	.slider .text-wrap h1 {
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+	.slider .text-wrap p {
+		font-size: 16px;
+    	margin-bottom: 10px;
+	}
 	.const-wrapp .enter-title {
 	    font-size: 20px;
 	    padding: 5px 0;
@@ -3689,6 +3799,19 @@ textarea:focus {
     	background-color: transparent;
     	padding-left: 6px;
 	}
+	.slider .slider-wrap {
+		height: 410px;
+	}
+	.slider .img-wrap {
+	    width: 235px;
+	    height: 130px;
+	    margin-top: 10px;
+	    margin-right: 0;
+	}
+	.slider .text-wrap {
+	    width: 90%;
+	    margin-top: 10px;
+	}
 	.last-seen {
 		height: 230px;
 	}
@@ -3724,6 +3847,9 @@ textarea:focus {
 	    width: 290px;
 	    top: -112px;
 	}
+	.course-bottom .show-bought .hint {
+	    height: 80px;
+	}
 	.speech-bubble-bottom:after {
 		left: 89%;
 	}
@@ -3758,6 +3884,21 @@ textarea:focus {
     	position: absolute;
     	top: 10px;
     	right: 20px;
+	}
+}
+@media screen and (max-width: 950px) and (min-width: 750px) {
+	.slider .slider-wrap {
+		height: 400px;
+	}
+	.slider .img-wrap {
+	    width: 250px;
+	    height: 160px;
+	    margin-top: 70px;
+	    margin-right: 15px;
+	}
+	.slider .text-wrap {
+	    width: 460px;
+	    margin-top: 70px;
 	}
 }
 @media screen and (max-width: 1100px) and (min-width: 750px) {
