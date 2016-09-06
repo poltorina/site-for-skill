@@ -11,7 +11,7 @@ $(document).ready(function() {
 	});
 
 
-  	$('.header .loggin button').click(function() {
+  	$('.header .loggin button, .course-top .bottom-info .ask').click(function() {
 		$('#overlay').fadeIn(400);
 	})
 
@@ -38,6 +38,12 @@ $(document).ready(function() {
 	$('.forgot-pass').click(function() {
 		$('.enter-form').animate({opacity: 0, top: '0%'}, 200, function(){
 	    	$('.forgot').css('display', 'block').animate({opacity: 1, top: '13%'}, 200);
+		});
+	})
+
+	$('.course-top .bottom-info .ask').click(function() {
+		$('.enter-form').animate({opacity: 0, top: '0%'}, 200, function(){
+	    	$('.ask-question').css('display', 'block').animate({opacity: 1, top: '13%'}, 200);
 		});
 	})
 

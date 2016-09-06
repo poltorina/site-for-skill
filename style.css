@@ -282,7 +282,7 @@ textarea:focus {
 	background-color: #64a70c;
 }
 
-.header .enter-form {
+.enter-form {
 	display: none;
 	overflow: hidden;
     text-align: center;
@@ -297,30 +297,37 @@ textarea:focus {
 	z-index: 5000;
 }
 
-.header .enter-form .form-wrapp {
+.enter-form .form-wrapp {
 	padding-bottom: 10px;
 }
 
-.header .reg {
+.reg {
 	width: 500px;
 	height: 397px;
 	margin-left: -250px;
 }
 
-.header .signin {
+.signin {
 	width: 450px;
 	height: 343px;
 	margin-left: -225px;
 }
 
-.header .forgot {
+.forgot {
 	width: 450px;
 	height: 254px;
 	margin-left: -225px;
 	padding: 0px 25px;
 }
 
-.header .enter-form .form-close {
+.ask-question {
+	width: 450px;
+	height: 375px;
+	margin-left: -225px;
+	padding: 0px 25px;
+}
+
+.enter-form .form-close {
 	float: right;
 	padding-top: 15px;
 	color: rgb(137, 137, 137);
@@ -331,7 +338,7 @@ textarea:focus {
     top: -10px;
 }
 
-.header .enter-form .enter-title {
+.enter-form .enter-title {
 	font-size: 18px;
 	padding-top: 35px;
 	text-transform: uppercase;
@@ -339,7 +346,7 @@ textarea:focus {
 	color: rgb(93, 161, 0);
 }
 
-.header .enter-form .enter-info {
+.enter-form .enter-info {
 	font-size: 16px;
 	padding-top: 15px;
 	padding-bottom: 3px;
@@ -347,7 +354,7 @@ textarea:focus {
 	color: rgb(54, 62, 67);
 }
 
-.header .enter-form form input {
+.enter-form form input {
 	height: 36px;
 	font-size: 16px;
 	padding: 5px 15px;
@@ -355,26 +362,39 @@ textarea:focus {
 	font-family: "Roboto";
 }
 
-.header .enter-form form input[type=text],
-.header .enter-form form input[type=password] {
+.enter-form form textarea {
+	height: 108px;
+	font-size: 16px;
+	padding: 5px 15px;
+	border-radius: 3px;
+	font-family: "Roboto";
+	resize: none;
+}
+
+.enter-form form input[type=text],
+.enter-form form input[type=password],
+.enter-form form textarea {
 	width: 330px;
+	max-width: 95%;
 	border: 1px solid rgb(54, 62, 67);
 	display: block;
-	margin: 13px 0 16px calc(50% - 165px);
+	margin: 13px auto 16px;
 	font-weight: 100;
 	border-radius: 3px;
 	font-size: 18px;
 	font-family: "Roboto";
 }
 
-.header .enter-form form input[type=text]:focus,
-.header .enter-form form input[type=text]:active,
-.header .enter-form form input[type=password]:focus,
-.header .enter-form form input[type=password]:active {
+.enter-form form input[type=text]:focus,
+.enter-form form input[type=text]:active,
+.enter-form form input[type=password]:focus,
+.enter-form form input[type=password]:active,
+.enter-form form textarea[type=password]:focus,
+.enter-form form textarea[type=password]:active {
 	border: 1px solid rgb(171, 220, 104);
 }
 
-.header .enter-form form .forgot-pass {
+.enter-form form .forgot-pass {
 	font-size: 16px;
 	width: 330px;
 	margin: 20px 0 20px calc(50% - 165px);
@@ -386,13 +406,13 @@ textarea:focus {
 	color: rgb(54, 62, 67);
 }
 
-.header .enter-form form .form-sub {
+.enter-form form .form-sub {
 	width: 330px;
 	height: 36px;
 	margin: 10px 0 10px calc(50% - 165px);
 }
 
-.header .enter-form form input[type=submit] {
+.enter-form form input[type=submit] {
 	color: white;
 	vertical-align: middle;
 	background-color: #5db40d;
@@ -404,11 +424,11 @@ textarea:focus {
 	float: left;
 }
 
-.header .enter-form form input[type=submit]:hover {
+.enter-form form input[type=submit]:hover {
 	background-color: #64a70c;
 }
 
-.header .enter-form form .soc-icon {
+.enter-form form .soc-icon {
 	display: inline-block;
 	vertical-align: middle;
 	width: 36px;
@@ -420,37 +440,37 @@ textarea:focus {
     background-color: #4c8103;
 }
 
-.header .enter-form form .soc-icon:hover {
+.enter-form form .soc-icon:hover {
     background-color: #fff;
     border: 2px solid #4c8103;
 }
 
-.header .enter-form form a {
+.enter-form form a {
 	color: #fff;
 }
 
-.header .enter-form .soc-icon:hover {
+.enter-form .soc-icon:hover {
 	color: #4c8103;
 }
 
-.header .enter-form form .soc-fb {
+.enter-form form .soc-fb {
 	padding-top: 4px;
 	padding-left: 5px;
 }
 
-.header .enter-form form .soc-vk {
+.enter-form form .soc-vk {
 	padding-top: 5px;
 }
 
-.header .enter-form form a .fa-facebook {
+.enter-form form a .fa-facebook {
     font-size: 30px;
 }
 
-.header .enter-form form a .fa-vk {
+.enter-form form a .fa-vk {
 	font-size: 22px;
 }
 
-.header .enter-form .sugg {
+.enter-form .sugg {
 	background-color: rgb(249, 249, 249);
 	width: 100%;
 	height: 72px;
@@ -458,19 +478,19 @@ textarea:focus {
     padding: 24px 0;
 }
 
-.header .sugg span {
+.sugg span {
 	font-size: 16px;
 	font-family: "Roboto";
 	color: rgb(54, 62, 67);
 }
 
-.header .sugg .sugg-link {
+.sugg .sugg-link {
 	color: #5da100;
 	font-weight: bold;
 	cursor: pointer;
 }
 
-.header .sugg .sugg-link:hover {
+.sugg .sugg-link:hover {
 	color: #7dd600;
 }
 
@@ -1129,6 +1149,9 @@ textarea:focus {
 }
 
 .course-top .course-info .info-text {
+	/*edit*/
+	height: 160px;
+	/*edit*/
 	font-size: 14px;
 	padding-bottom: 40px;
 }
@@ -3443,6 +3466,9 @@ textarea:focus {
 	background-color: white;
 	border-top: 1px solid rgb(204, 204, 204);
 	padding: 20px 4%;
+	/*edit*/
+	font-family: "Roboto";
+	/*edit*/
 }
 
 .footer .footer-logo,
@@ -3525,6 +3551,15 @@ textarea:focus {
 
 
 @media screen and (max-width: 380px) {
+	.enter-form form input[type=text],
+	.enter-form form input[type=password],
+	.enter-form form textarea {
+		margin: 13px auto 16px 4%;
+    	font-size: 16px;
+	}
+	.enter-form form .form-sub {
+		margin: 10px 0 10px 4%;
+	}
 	.course-top .bottom-info button {
 		display: block;
 	}
@@ -3550,7 +3585,7 @@ textarea:focus {
 	}
 }
 @media screen and (max-width: 510px) {
-	.header .enter-form {
+	.enter-form {
 		width: 100%;
     	left: 0; 
     	margin-left: 0; 
