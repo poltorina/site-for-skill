@@ -281,7 +281,7 @@ textarea:focus {
 .header .loggin .to-reg:hover {
 	background-color: #64a70c;
 }
-
+/*edit start*/
 .enter-form {
 	display: none;
 	overflow: hidden;
@@ -493,6 +493,7 @@ textarea:focus {
 .sugg .sugg-link:hover {
 	color: #7dd600;
 }
+/*edit end*/
 
 .header .mobile-menu-btn {
 	display: none;
@@ -1149,9 +1150,9 @@ textarea:focus {
 }
 
 .course-top .course-info .info-text {
-	/*edit*/
+	/*edit start*/
 	height: 160px;
-	/*edit*/
+	/*edit end*/
 	font-size: 14px;
 	padding-bottom: 40px;
 }
@@ -3551,6 +3552,7 @@ textarea:focus {
 
 
 @media screen and (max-width: 380px) {
+/*edit start*/
 	.enter-form form input[type=text],
 	.enter-form form input[type=password],
 	.enter-form form textarea {
@@ -3560,6 +3562,7 @@ textarea:focus {
 	.enter-form form .form-sub {
 		margin: 10px 0 10px 4%;
 	}
+/*edit end*/
 	.course-top .bottom-info button {
 		display: block;
 	}
@@ -3585,11 +3588,13 @@ textarea:focus {
 	}
 }
 @media screen and (max-width: 510px) {
+/*edit start*/
 	.enter-form {
 		width: 100%;
     	left: 0; 
     	margin-left: 0; 
 	}
+/*edit end*/
 	.container .img {
 		width: 100%;
 		height: auto;

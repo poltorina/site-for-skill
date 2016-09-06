@@ -10,10 +10,11 @@ $(document).ready(function() {
 		$('.anons').css('display', 'none');
 	});
 
-
+// edit start
   	$('.header .loggin button, .course-top .bottom-info .ask').click(function() {
 		$('#overlay').fadeIn(400);
 	})
+// edit end
 
 	$('#overlay').click( function(){
 		$('.enter-form').animate({opacity: 0, top: '0%'}, 200, function(){
@@ -41,11 +42,13 @@ $(document).ready(function() {
 		});
 	})
 
+// edit start
 	$('.course-top .bottom-info .ask').click(function() {
 		$('.enter-form').animate({opacity: 0, top: '0%'}, 200, function(){
 	    	$('.ask-question').css('display', 'block').animate({opacity: 1, top: '13%'}, 200);
 		});
 	})
+// edit end
 
 	$('.footer .fa-chevron-up').click(function(event) {
 		event.preventDefault();
