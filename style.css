@@ -1377,7 +1377,7 @@ textarea:focus {
 
 .course-bottom .info-panel .tab-list li {
     position: relative;
-    padding: 0 10px 14px;
+    padding: 0 55px 14px 10px;
     z-index: 10;
 }
 
@@ -1438,8 +1438,8 @@ textarea:focus {
 	background-image: url(img/list-sub-inprog.png);
 }
 
-.course-bottom .tab-soder .tab-list>i:before,
-.course-bottom .tab-soder .tab-list>i:after {
+.course-bottom .tab-soder .tab-list .dotted:before,
+.course-bottom .tab-soder .tab-list .dotted:after {
     content: '';
     display: block;
     height: 30px;
@@ -1450,18 +1450,18 @@ textarea:focus {
     border-left: 1px dotted #b7b7b7;
 }
 
-.course-bottom .tab-soder .psevdo-middle>i:before,
-.course-bottom .tab-soder .psevdo-middle>i:after {
+.course-bottom .tab-soder .psevdo-middle .dotted:before,
+.course-bottom .tab-soder .psevdo-middle .dotted:after {
     height: 51px;
 }
-.course-bottom .tab-soder .tab-list>i:before {
-    top: -20px;
+.course-bottom .tab-soder .tab-list .dotted:before {
+    top: -17px;
 }
-.course-bottom .tab-soder .tab-list>i:after {
-    top: 10px;
+.course-bottom .tab-soder .tab-list .dotted:after {
+    top: 14px;
 }
-.course-bottom .tab-list li:first-child>i:before,
-.course-bottom .tab-list li:last-child>i:after {
+.course-bottom .tab-list li:first-child .dotted:before,
+.course-bottom .tab-list li:last-child .dotted:after {
 	height: 0;
 }
 
