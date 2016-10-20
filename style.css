@@ -1375,11 +1375,13 @@ textarea:focus {
     position: relative;
 }
 
+/*edit start*/
 .course-bottom .info-panel .tab-list li {
     position: relative;
     padding: 0 55px 14px 10px;
     z-index: 10;
 }
+/*edit end*/
 
 .course-bottom .info-panel .tab-list .main {
 	padding-right: 125px;
@@ -1411,7 +1413,8 @@ textarea:focus {
     position: relative;
 }
 
-.course-bottom .tab-list li>i {
+/*edit start*/
+.course-bottom .tab-list li .dotted {
 	background-image: url(img/list.png);
     background-size: cover;
     height: 19px;
@@ -1421,20 +1424,20 @@ textarea:focus {
     position: absolute;
 }
 
-.course-bottom .tab-list .list-child>i {
+.course-bottom .tab-list .list-child .dotted {
 	background-image: url(img/list-sub.png);
     left: -25px;
 }
 
-.course-bottom .tab-list .main.passed>i {
+.course-bottom .tab-list .main.passed .dotted {
 	background-image: url(img/list-done.png);
 }
 
-.course-bottom .tab-list .list-child.passed>i {
+.course-bottom .tab-list .list-child.passed .dotted {
 	background-image: url(img/list-sub-done.png);
 }
 
-.course-bottom .tab-list .list-child.inprogress>i {
+.course-bottom .tab-list .list-child.inprogress .dotted {
 	background-image: url(img/list-sub-inprog.png);
 }
 
@@ -1460,6 +1463,8 @@ textarea:focus {
 .course-bottom .tab-soder .tab-list .dotted:after {
     top: 14px;
 }
+/*edit end*/
+
 .course-bottom .tab-list li:first-child .dotted:before,
 .course-bottom .tab-list li:last-child .dotted:after {
 	height: 0;
